@@ -12,7 +12,7 @@ config {
 
 WITH dates AS (
   SELECT 
-    FORMAT_DATE('%Y%m%d',DATE_SUB(CURRENT_DATE(), INTERVAL 3 day)) AS start_date,
+    FORMAT_DATE('%Y%m%d',DATE_SUB(CURRENT_DATE(), INTERVAL 90 day)) AS start_date,
     FORMAT_DATE('%Y%m%d',DATE_SUB(CURRENT_DATE(), INTERVAL 1 day)) AS end_date,
 ),
 
