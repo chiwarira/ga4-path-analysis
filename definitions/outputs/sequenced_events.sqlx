@@ -1,6 +1,7 @@
 config {
     type: "incremental",
     name: "sequenced_events",
+    tags: ["daily"],
     description: `page_views and other events extracted from GA4 export data and organized by session ID and sequence number.`,
     uniqueKey: ["date", "session_id", "seq_num"],
     bigquery: {
